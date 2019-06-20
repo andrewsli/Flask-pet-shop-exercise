@@ -25,7 +25,9 @@
 
 <div class="container text-center">
 
-<!-- TODO: we want flashed messages to appear here! -->
+{% for msg in get_flashed_messages() %}
+  <p class="alert alert-primary">{{ msg }}</p>
+{% endfor %}
 
 {% block content %} content will go here {% endblock %}
 

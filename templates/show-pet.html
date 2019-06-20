@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %} Your Pet{% endblock %}
+
+{% block content %} 
+
+<h1>{{ pet_name }}</h1>
+
+<img src="{{pet_img}}">
+
+<p>{{ pet_name }} is {{ pet_color }} and is {{ pet_age }} years old.</p>
+
+
+{% endblock %}

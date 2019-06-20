@@ -14,7 +14,7 @@ class Pet():
     # strongly warn users of this class not to use this variable directly,
     # but to instead use our public methods.
 
-    _pets  = {}
+    _pets = {}
 
     def __init__(self, name, color, age, photo_url):
         """Make Pet instance from data."""
@@ -38,7 +38,7 @@ class Pet():
         """Returns list of pet instances of all pets in our pet shop."""
 
         return [pet for pet in cls._pets.values()]
-    
+
     @classmethod
     def add(cls, name, color, age, photo_url):
         """Creates new pet and adds to storage of all pets."""
@@ -48,7 +48,7 @@ class Pet():
 
         new_pet = cls(name, color, age, photo_url)
         cls._pets[new_pet.id] = new_pet
-    
+
     @classmethod
     def find_by_id(cls, pet_id):
         """Find pet from the pet ID. If not found, returns None."""
