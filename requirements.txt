@@ -7,4 +7,4 @@ Jinja2==2.10.1
 MarkupSafe==1.1.1
 python-slugify==3.0.2
 text-unidecode==1.2
-Werkzeug==0.15.4
+Werkzeug==0.15.5
